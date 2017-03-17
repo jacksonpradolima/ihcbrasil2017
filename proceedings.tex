@@ -1,0 +1,101 @@
+\documentclass{sigchi}
+
+%configuração de Copyright
+%\include{copyright}
+
+% configurações de diversos pacotes da ACM
+\include{packages}
+
+% End of preamble. Here it comes the document.
+\begin{document}
+
+\title{\plaintitle}
+
+\numberofauthors{5}
+\author{%
+  \alignauthor{Jackson A. Prado Lima\\
+    \affaddr{Department of Computer Science, Federal University of Paraná}\\
+    \affaddr{Curitiba, Brazil}\\
+    \email{japlima@inf.ufpr.br}}\\
+  \alignauthor{Thiago\\
+    \affaddr{for Submission}\\
+    \affaddr{Curitiba, Brazil}\\
+    \email{e-mail address}}\\
+  \alignauthor{Rodrigo Mello\\
+    \affaddr{for Submission}\\
+    \affaddr{Curitiba, Brazil}\\
+    \email{e-mail address}}\\  
+  \alignauthor{José Ramalho\\
+    \affaddr{for Submission}\\
+    \affaddr{Curitiba, Brazil}\\
+    \email{e-mail address}}\\
+  \alignauthor{Guilherme Cintra\\
+    \affaddr{for Submission}\\
+    \affaddr{Curitiba, Brazil}\\
+    \email{e-mail address}}\\  
+}
+
+\maketitle
+
+\begin{abstract}
+  This sample paper describes the formatting
+  requirements for SIGCHI conference proceedings, and offers
+  recommendations on writing for the worldwide SIGCHI
+  readership. Please review this document even if you have submitted
+  to SIGCHI conferences before, as some format details have changed
+  relative to previous years. Abstracts should be about 150 words and
+  are required.
+\end{abstract}
+
+\category{H.5.m.}{Information Interfaces and Presentation
+  (e.g. HCI)}{Miscellaneous} \category{See
+  \url{http://acm.org/about/class/1998/} for the full list of ACM
+  classifiers. This section is required.}{}{}
+
+\keywords{\plainkeywords}
+
+%=====================================================
+
+% corpo do documento
+
+\include{introduction}
+\include{methodology}
+\include{justification}
+\include{proposed_method}
+\include{viability}
+
+%Adicionar link para video demo
+% * <Jackson Antonio do Prado Lima> 13:50:15 17 Mar 2017 UTC-0300:
+% Lembrar
+
+\section{Acknowledgments}
+
+This work is supported by Brazilian funding agencies CAPES and CNPq. Grants: XXXXXX/XXXX-X and XXXXXX/XXXX-X.
+
+% Balancing columns in a ref list is a bit of a pain because you
+% either use a hack like flushend or balance, or manually insert
+% a column break.  http://www.tex.ac.uk/cgi-bin/texfaq2html?label=balance
+% multicols doesn't work because we're already in two-column mode,
+% and flushend isn't awesome, so I choose balance.  See this
+% for more info: http://cs.brown.edu/system/software/latex/doc/balance.pdf
+%
+% Note that in a perfect world balance wants to be in the first
+% column of the last page.
+%
+% If balance doesn't work for you, you can remove that and
+% hard-code a column break into the bbl file right before you
+% submit:
+%
+% http://stackoverflow.com/questions/2149854/how-to-manually-equalize-columns-
+% in-an-ieee-paper-if-using-bibtex
+%
+% Or, just remove \balance and give up on balancing the last page.
+%
+\balance{}
+
+% REFERENCES FORMAT
+% References must be the same font size as other body text.
+\bibliographystyle{SIGCHI-Reference-Format}
+\bibliography{references}
+
+\end{document}
